@@ -3,6 +3,8 @@
 	<head>
 		<title>index</title>
 		<link rel="stylesheet" href="css/style.css">
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/jquery.idTabs.min.js"></script>
 	</head>
 	<body>
 		<div id="container">
@@ -123,6 +125,19 @@
 							</div>
 						</div> <!-- end tagwidget -->
 
+						<div id="tab" class="sidewidget tabwidget">
+						  <ul> 
+						    <li><a href="#tab1" class="selected">Tab 1</a></li> 
+						    <li><a href="#tab2">Tab 2</a></li> 
+						    <li><a href="#tab3">Tab 3</a></li> 
+						  </ul> 
+						  <div id="tab1">This is tab 1.</div> 
+						  <div id="tab2">More content in tab 2.</div> 
+						  <div id="tab3">Tab 3 is always last!</div> 							
+						</div>
+						<script type="text/javascript"> 
+						  $("#tab ul").idTabs(); 
+						</script>							
 					</div> <!-- end side -->					
 				</div> <!-- end content -->
 			</div> <!-- end content_wrap -->

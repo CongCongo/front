@@ -221,6 +221,43 @@ body{
 	background-color: #263248;
 }
 
+/*Tab style*/
+.tabwidget ul{
+	margin: 0;
+	padding: 0;
+}
+.tabwidget li { list-style:none; float:left; }
+.tabwidget ul a {
+  display:block;
+  padding:6px 10px;
+  text-decoration:none!important;
+  margin:1px;
+  margin-left:0;
+  font:10px Verdana;
+  color:#FFF;
+  background:#263248;
+}
+.tabwidget ul a:hover {
+  color:#000;
+  background:#F3FFE2;
+  }
+.tabwidget ul a.selected {
+  margin-bottom:0;
+  color:#000;
+  background:#F3FFE2;
+  border-bottom:1px solid #F3FFE2;
+  cursor:default;
+  }
+.tabwidget div {
+  padding:10px 10px 8px 10px;
+  *padding-top:3px;
+  *margin-top:-15px;
+  clear:left;
+  background:#F3FFE2;
+  font:10pt Georgia;
+}
+.tabwidget div a { color:#000; font-weight:bold; }
+
 #footer{
 	background: #ccc;
 	clear: both;
