@@ -1,18 +1,42 @@
-form, div{
+html, body, div, span, applet, object, iframe,
+p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	outline: 0;
-	font-weight: inherit;
-	font-style: inherit;
 	font-size: 100%;
-	font-family: inherit;
+	font: inherit;
 	vertical-align: baseline;
 }
+
 body{
-	background-image: url(../img/bg.png);
-	background-repeat: repeat;
+	font: 14px/21px Helvetica, Arial, sans-serif;
+	background: url(../img/bg.png) 0 0 repeat;
 }
+p, ul, ol {
+	margin-bottom: 15px;
+}
+p a {
+	color: #046380;
+	font-weight: bold;
+	text-decoration: none;
+}
+hr{
+	border: none;
+	height: 1 px;
+	border-top: 1 solid #ddd;
+}
+
 #container{
 	width: 1000px;
 	margin: 0 auto;
@@ -22,21 +46,21 @@ body{
 	background: #000000;
 	padding: 20px;
 	display: block;
-	height: 100px;
+	height: 80px;
 	color: #fff;
 }
 
 /*nav bar style*/
 #nav{
 	width: 100%;
-	background: #263248;
+	/*background: #263248;*/
+	background-image: url(../img/nav-bg.png);
+	background-repeat: repeat;
 	float: left;
 	display: block;
 }
 #nav ul {
   font-family: Arial, Verdana;
-  margin: 0;
-  padding: 0;
   list-style: none;
 }
 #nav ul li {
@@ -44,13 +68,13 @@ body{
   position: relative;
   float: left;
   text-align: center;
+  border-right: 1px solid #fff;
 }
 #nav ul li a {
   display: block;
   width: 100px;
   text-decoration: none;
   color: #fff;
-  border-right: 1px solid #fff;
   padding: 5px 10px;
 }
 #nav ul li a:hover { background: #046380; }
@@ -92,8 +116,9 @@ body{
 	background: #fff;
 	float: left;
 	width: 648px;
-	border: 1px solid #ddd;
-	display: inline;
+	border: 1px solid #d7d7d7;
+	-webkit-box-shadow: inset 5px 5px 0px #fafafa, inset -5px -5px 0px #fafafa, 0px 0px 5px #d7d7d7;
+	box-shadow: inset 5px 5px 0px #fafafa, inset -5px -5px 0px #fafafa, 0px 0px 5px #d7d7d7;
 }
 #main #posts{
 	float: left;
@@ -147,18 +172,29 @@ body{
 	margin-top: 10px;
 }
 
+/*single page style*/
+#main .singlepost{
+	padding: 30px 20px;
+}
+
 /*side bar*/
 #side{
 	float: right;
 	width: 310px;
+	background: white;
+	border: 1px solid #d7d7d7;
+	-webkit-box-shadow: inset 5px 5px 0px #fafafa, inset -5px -5px 0px #fafafa, 0px 0px 5px #d7d7d7;
+	box-shadow: inset 5px 5px 0px #fafafa, inset -5px -5px 0px #fafafa, 0px 0px 5px #d7d7d7;
 }
 #search_form{
+	margin: 15px 10px;
 	position: relative;
 	height: 30px;
 	width: 260px;
 }
 #search_form input{
 	display: inline-block;
+	border: 1px solid #d7d7d7;
 	padding: 0;
 	margin: 0;
 }
@@ -166,13 +202,12 @@ body{
 	float: left;
 	height: 30px;
 	width: 200px;
-	border: none;
 }
 .search_submit{
 	float: left;
 	background-color: #263248;
-	width: 60px;
-	height: 30px;
+	width: 58px;
+	height: 32px;
 	color: #fff;
 	border: none;
 	cursor: pointer;
@@ -195,6 +230,9 @@ body{
 	margin: 4.5px;
 	float: left;
 	border: none;
+}
+.sidewidget ul{
+	list-style: none;
 }
 .sidewidget .tagtitle{
 	margin: 0 0 10px 0;

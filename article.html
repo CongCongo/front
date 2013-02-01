@@ -1,25 +1,123 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
 	<head>
-		<title>article</title>
-		<link rel="stylesheet" href="css/style.css" />
+		<title>index</title>
+		<link rel="stylesheet" href="css/style.css">
 		<script type="text/javascript" src="js/jquery.js"></script>
 		<script type="text/javascript" src="js/jquery.idTabs.min.js"></script>
 	</head>
 	<body>
-	<div id="usual1" class="usual"> 
-	  <ul> 
-	    <li><a href="#tab1" class="selected">Tab 1</a></li> 
-	    <li><a href="#tab2">Tab 2</a></li> 
-	    <li><a href="#tab3">Tab 3</a></li> 
-	  </ul> 
-	  <div id="tab1">This is tab 1.</div> 
-	  <div id="tab2">More content in tab 2.</div> 
-	  <div id="tab3">Tab 3 is always last!</div> 
-	</div> 
-	 
-	<script type="text/javascript"> 
-	  $("#usual1 ul").idTabs(); 
-	</script>	
+		<div id="container">
+
+			<!-- HEADER -->
+			<div id="header">
+				<h1>Page Header</h1>
+			</div> <!-- end header -->
+
+			<!-- NAV -->
+			<div id="nav">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">about</a></li>
+					<li><a href="#">contact</a></li>
+					<li><a href="#">Products</a>
+						<ul>
+							<li><a href="hello">hello</a></li>
+							<li><a href="world">world</a></li>
+							<li><a href="nerd">nerd</a></li>
+						</ul> <!-- end level 2 -->
+					</li>
+				</ul> <!-- end level 1 -->
+			</div> <!-- end nav -->
+
+			<!-- WRAP -->
+			<div id="content_wrap">
+				<div id="content" class="clearfix">
+					<!-- MAIN CONTENT -->
+					<div id="main_wrap">
+						<div id="main">
+							<div id="posts">
+								<div class="singlepost">
+									<p>
+										For a long time, the only way to write custom controls in jQuery was to extend the $.fn namespace. This works well for simple widgets.For a long time, the only way to write custom controls in jQuery was to extend the $.fn namespace. This works well for simple widgets.For a long time, the only way to write custom controls in jQuery was to extend the $.fn namespace. This works well for simple widgets.
+									</p>
+									<p>
+										For a long time, the only way to write custom controls in jQuery was to extend the $.fn namespace. This works well for simple widgets.For a long time, the only way to write custom controls in jQuery was to extend the $.fn namespace. This works well for simple widgets.For a long time, the only way to write custom controls in jQuery was to extend the $.fn namespace. This works well for simple widgets.
+									</p>
+
+								</div>
+							</div> <!-- end posts -->
+						</div> <!-- end main -->
+					</div> <!-- end main_wrap -->
+
+					<!-- SIDE -->
+					<div id="side">
+						<div id="search_form">
+							<form action="" method="GET">
+								<input type="text" class="search_input" placeholder="Search" />
+								<input type="submit" class="search_submit" value="submit" />
+							</form>
+						</div> <!-- end search form -->
+						<div class="sidewidget">
+							<ul>
+								<li><a href="#">item1</a></li>
+								<li><a href="#">item2</a></li>
+								<li><a href="#">item3</a></li>
+							</ul>							
+						</div>
+						<div class="sidewidget photowidget clearfix">
+							<a href="#">
+								<img src="img/post_img.jpg" alt="" />
+							</a>
+							<a href="#">
+								<img src="img/post_img.jpg" alt="" />
+							</a>
+							<a href="#">
+								<img src="img/post_img.jpg" alt="" />
+							</a>
+							<a href="#">
+								<img src="img/post_img.jpg" alt="" />
+							</a>
+						</div> <!-- end photowidget -->
+						<div class="sidewidget tagwidget">
+							<h4 class="tagtitle">TAG</h4>
+							<div class="tags">
+								<a href="#">hello</a>
+								<a href="#">world</a>
+								<a href="#">gavin</a>
+								<a href="#">hellosefwe</a>
+								<a href="#">world</a>
+								<a href="#">gavisdfn</a>
+								<a href="#">hlo</a>
+								<a href="#">world</a>
+								<a href="#">gavin</a>								
+							</div>
+						</div> <!-- end tagwidget -->
+
+						<div id="tab" class="sidewidget tabwidget">
+						  <ul> 
+						    <li><a href="#tab1" class="selected">Tab 1</a></li> 
+						    <li><a href="#tab2">Tab 2</a></li> 
+						    <li><a href="#tab3">Tab 3</a></li> 
+						  </ul> 
+						  <div id="tab1">This is tab 1.</div> 
+						  <div id="tab2">More content in tab 2.</div> 
+						  <div id="tab3">Tab 3 is always last!</div> 							
+						</div>
+						<script type="text/javascript"> 
+						  $("#tab ul").idTabs(); 
+						</script>							
+					</div> <!-- end side -->					
+				</div> <!-- end content -->
+			</div> <!-- end content_wrap -->
+
+			<!-- FOOTER -->
+			<div id="footer">
+				<p>footer</p>
+			</div> <!-- end footer -->
+
+
+		</div> <!-- end container -->
+
 	</body>
 </html>
