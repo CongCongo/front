@@ -5,6 +5,12 @@
 		<link rel="stylesheet" href="css/style.css">
 		<script type="text/javascript" src="js/jquery.js"></script>
 		<script type="text/javascript" src="js/jquery.idTabs.min.js"></script>
+		<style type="text/css">
+		.singlepost img{
+			width: 200px;
+			height: 200px;
+		}
+		</style>	
 	</head>
 	<body>
 		<div id="container">
@@ -36,20 +42,70 @@
 					<!-- MAIN CONTENT -->
 					<div id="main_wrap">
 						<div id="main">
-							<div id="posts">
-								<div class="singlepost">
+								<div class="singlepost clearfix">
+									<img src="img/post_img.jpg" alt="aligncenter" class="aligncenter"/>
 									<p>
 										For a long time, the only way to write custom controls in jQuery was to extend the $.fn namespace. This works well for simple widgets.For a long time, the only way to write custom controls in jQuery was to extend the $.fn namespace. This works well for simple widgets.For a long time, the only way to write custom controls in jQuery was to extend the $.fn namespace. This works well for simple widgets.
 									</p>
+									<br class="clearboth" />
+
+									<img src="img/post_img.jpg" alt="alignleft" class="alignleft" />
+									<p>
+										For a long time, the only way to write custom controls in jQuery was to extend the $.fn namespace. This works well for simple widgets.For a long time, the only way to write custom controls in jQuery was to extend the $.fn namespace. This works well for simple widgets.For a long time, the only way to write custom controls in jQuery was to extend the $.fn namespace. This works well for simple widgets.
+									</p>
+									<br class="clearboth" />
+
+									<img src="img/post_img.jpg" alt="alignright" class="alignright" />
 									<p>
 										For a long time, the only way to write custom controls in jQuery was to extend the $.fn namespace. This works well for simple widgets.For a long time, the only way to write custom controls in jQuery was to extend the $.fn namespace. This works well for simple widgets.For a long time, the only way to write custom controls in jQuery was to extend the $.fn namespace. This works well for simple widgets.
 									</p>
 
-								</div>
-							</div> <!-- end posts -->
-						</div> <!-- end main -->
-					</div> <!-- end main_wrap -->
-
+								</div> <!-- end singlepost -->
+						</div> <!-- end posts -->
+						<div class="comments-area" id="comments">
+							<h3>5 commets to this article</h3>
+							<ol class="comments-list">
+								<li>
+									<div>
+										<p>
+											<span><a href="#">Gavin</a></span>
+											<span>on Sep 12th, 2012 at 3:05 PM</span>
+										</p>
+										<p>
+											This is the actual comment. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
+										</p>
+									</div>
+								</li>
+								<li>
+									<div>
+										<p>
+											<span><a href="#">Gavin</a></span>
+											<span>on Sep 12th, 2012 at 3:05 PM</span>
+										</p>
+										<p>
+											This is the actual comment. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
+										</p>
+									</div>									
+								</li>
+							</ol>
+							<div id="commentdiv">
+								<h3>Comment</h3>
+								<form action="#" id="commentform">
+									<p>
+										<input type="text" name="author" id="author" />
+										<label for="author">author</label>
+									</p>
+									<p>
+										<input type="text" name="email" id="email" />
+										<label for="email">email</label>
+									</p>
+									<p>
+										<textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+									</p>									
+								</form>
+							</div>
+						</div> <!-- end comments area -->
+					</div> <!-- end main_wrap -->					
 					<!-- SIDE -->
 					<div id="side">
 						<div id="search_form">

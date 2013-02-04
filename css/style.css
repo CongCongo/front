@@ -114,7 +114,6 @@ hr{
 
 #main{
 	background: #fff;
-	float: left;
 	width: 648px;
 	border: 1px solid #d7d7d7;
 	-webkit-box-shadow: inset 5px 5px 0px #fafafa, inset -5px -5px 0px #fafafa, 0px 0px 5px #d7d7d7;
@@ -295,6 +294,66 @@ hr{
   font:10pt Georgia;
 }
 .tabwidget div a { color:#000; font-weight:bold; }
+
+
+/*article style*/
+.singlepost p{
+	display: block;
+	margin-top: 10px;
+}
+.aligncenter{
+	display: block;
+	margin: 10px auto;
+}
+.alignleft{
+	float: left;
+	margin: 10px 10px 20px 0;
+}
+.alignright{
+	float: right;
+	margin: 10px 0 10px 20px;
+
+}
+.clearboth{
+	clear: both;
+}
+
+/*comments */
+.comments-area{
+	margin-top: 30px;
+}
+.comments-list{
+	margin-top: 30px;
+}
+.comments-list li{
+	list-style-type: none;
+}
+.comments-list li div{
+	background: white;
+	border: 1px solid #d7d7d7;
+	-webkit-box-shadow: 0px 0px 5px #d7d7d7;
+	box-shadow: 0px 0px 5px #d7d7d7;
+	/*padding: 1.5em 2em;*/
+	padding: 15px 20px 0 20px;
+	margin-bottom: 15px;
+}
+
+#commentform input{
+	width: 40%;
+	border: 1px solid #d7d7d7;
+	height: 30px;
+	-webkit-box-shadow: 0px 0px 5px #d7d7d7;
+	box-shadow: 0px 0px 5px #d7d7d7;
+	padding: 5px;
+}
+#commentform textarea{
+	width: 98%;
+	display: block;
+	border: 1px solid #d7d7d7;
+	-webkit-box-shadow: 0px 0px 5px #d7d7d7;
+	box-shadow: 0px 0px 5px #d7d7d7;
+	padding: 5px;
+}
 
 #footer{
 	background: #ccc;
