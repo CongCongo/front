@@ -354,6 +354,10 @@ hr{
 	box-shadow: 0px 0px 5px #d7d7d7;
 	padding: 5px;
 }
+#commentform input.btn{
+	width: 80px;
+}
+
 
 #footer{
 	background: #ccc;
