@@ -1,34 +1,77 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
 	<head>
-		<style type="text/css">
-		.imgbox{
-			position:relative;
-			width: 300px;
-        	height: 300px;
-		}
-        img{
-        	width: 300px;
-        	height: 300px;
-        	border: 0;
-        }
-        .imgdesc{
-			position:absolute;
-			bottom:0;
-			left:0;
-			text-align:center;
-			background:#000;
-			width:300px;
-			color:#fff;
-        }
-		</style>
+	<link rel="stylesheet" href="css/nav.css" />
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery.masonry.min.js"></script>
+	<script type="text/javascript" src="js/jquery.infinitescroll.js"></script>
+	<script type="text/javascript" src="js/front.js"></script>
 	</head>
 	<body>
-		<div class="imgbox">
-			<img src="img/post_img.jpg" alt="" />
-			<div class="imgdesc">
-				hello
-			</div>			
+		<div id="nav" class="clearfix">
+			<ul>
+				<li><a href="#">Hello</a></li>
+				<li><a href="#">World</a>
+					<ul>
+						<li><a href="#">Java</a></li>
+						<li><a href="#">C</a></li>
+						<li><a href="#">Python</a>
+							<ul>
+								<li><a href="#">Django</a></li>
+								<li><a href="#">Flask</a></li>
+								<li><a href="#">Webpy</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><a href="#">gavin</a></li>
+			</ul>
 		</div>
+		<div id="content_wrap">
+		  <div class="box col1">
+		    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
+		  </div>
+
+		  <div class="box col1">
+		    <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. </p>
+		  </div>
+
+		  <div class="box col1">
+		    <p>Fusce accumsan mollis eros. Pellentesque a diam sit amet mi ullamcorper vehicula  </p>
+		  </div>
+
+		  <div class="box col2">
+		    <p>Vestibulum volutpat, lacus a ultrices sagittis,</p>
+		    <p>Fusce accumsan mollis eros. Pellentesque a diam sit amet mi ullamcorper vehicula  </p>
+		    <p>Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis.</p>
+		  </div>
+		  <div class="box col3">
+		    <p>
+		      <a href="http://www.flickr.com/photos/nemoorange/3318887645/" title="Clarendon Metro by nemoorange, on Flickr"><img src="http://farm4.static.flickr.com/3619/3318887645_1f33364338.jpg" alt="Clarendon Metro"  /></a>
+		    </p>
+		  </div>
+
+		  <div class="box col1">
+		    <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. </p>
+		  </div>
+
+		  <div class="box col2">
+		    <p>
+		      <a href="http://www.flickr.com/photos/nemoorange/3319714470/" title="Whitlow's on Wilson by nemoorange, on Flickr"><img src="http://farm4.static.flickr.com/3008/3319714470_c05a5cb5a8_m.jpg" alt="Whitlow's on Wilson" /></a>
+		    </p>
+		  </div>			
+		</div> <!-- end content_wrap -->
+		<script type="text/javascript">
+		$(function(){
+		var $container = $('#content_wrap');
+	    
+	    $container.imagesLoaded(function(){
+	      $container.masonry({
+	        itemSelector: '.box',
+	      });
+	    });
+		});
+
+		</script>
 	</body>
 </html>
