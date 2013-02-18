@@ -1,0 +1,105 @@
+/*nav bar style*/
+body,div, ul,li{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+#nav{
+	width: 100%;
+  margin: 0 0 10px 0;
+  position: relative;
+	background-image: url(../img/nav-bg.png);
+	background-repeat: repeat;
+	display: block;
+  z-index: 1;
+}
+#nav ul {
+  font-family: Arial, Verdana;
+  list-style: none;
+}
+#nav ul ul{
+  position: absolute;
+  display: none;
+}
+#nav ul ul ul{
+  position: absolute;
+  left: 100%;
+  top: 0;
+}
+
+#nav ul li {
+  display: block;
+  position: relative;
+  float: left;
+  text-align: center;
+  border-right: 1px solid #fff;
+}
+#nav ul li a {
+  display: block;
+  width: 100px;
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 10px;
+}
+#nav ul li a:hover { background: #046380; }
+#nav > ul > li:hover > ul {
+  display: block;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+}
+#nav ul ul li:hover ul{
+  display: block;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+}
+
+#nav li:hover li {
+  float: none;
+  font-size: 11px;
+  font-size: 15px;
+  height: 30px;
+  background-image: url(../img/nav-bg.png);
+  background-repeat: repeat;
+  border-right: 1px solid #263248;
+  border-bottom: 1px solid #d7d7d7;
+}
+#nav li:hover li a:hover { background: #046380;  }
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+}
+.clearfix { display: inline-block; }
+html[xmlns] .clearfix { display: block; }
+* html .clearfix { height: 1%; }
+
+/**/
+#content_wrap{
+  background: white;
+  width: 1000px;
+  margin: 0 auto;
+  padding: 20px 10px;
+  display: block;
+}
+
+/* box style */
+.box{
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid #d7d7d7;
+  width: 200px;
+  -webkit-box-shadow: inset 5px 5px 0px #fafafa, inset -5px -5px 0px #fafafa, 0px 0px 5px #d7d7d7;
+  box-shadow: inset 5px 5px 0px #fafafa, inset -5px -5px 0px #fafafa, 0px 0px 5px #d7d7d7;
+}
+.box img{
+  max-width: 200px;
+}
